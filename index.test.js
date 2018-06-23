@@ -15,10 +15,10 @@ test('push', () => {
 });
 
 test('shift',() =>{
-  const a = ['a','b','c','d'];
+  const a = [1,2,3];
   const result = array.shift(a);
-  expect(result).toBe('a');
-  expect(a).toEqual(['b','c','d']);
+  expect(result).toBe(1);
+  expect(a).toEqual([2,3]);
 });
 
 
