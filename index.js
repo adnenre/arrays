@@ -1,4 +1,8 @@
-function concat(array) {}
+function concat(arr1,arr2) {
+  let newArray =  [...arr1,...arr2];
+    
+  return newArray;
+}
 
 function copyWithin(array) {}
 
@@ -26,7 +30,14 @@ function keys(array) {}
 
 function lastIndexOf(array) {}
 
-function map(array) {}
+function map(array) {
+  let newArray = []
+  for(let i = 0; i<array.length ; i++){
+    newArray[i]=array[i];
+  }
+  return newArray;
+}
+
 
 function pop(array) {
   const res = array[array.length - 1];

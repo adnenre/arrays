@@ -20,5 +20,21 @@ test('shift',() =>{
   expect(result).toBe(1);
   expect(a).toEqual([2,3]);
 });
+test('concat',()=>{
+   const array1 = ['a','b','c'];
+   const array2 = ['d','e','f'];
+   const result = array.concat(array1,array2);
+   expect(result).toEqual(['a','b','c','d','e','f']);
+   expect(array1).toEqual(['a','b','c'])
+})
+
+// test('slice',() => {
+//  const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+//  const result = array.slice(animals,2);
+//  expect(result).toBe(['camel', 'duck', 'elephant']);
+//  expect(array.slice(animals,2,4)).toBe(['camel', 'duck']);
+//  expect(array.slice(animals,1,5)).toBe(['bison', 'camel', 'duck', 'elephant']);
+//  expect(a).toEqual(['ant', 'bison', 'camel', 'duck', 'elephant']);
+// });
 
 
